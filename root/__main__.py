@@ -5,8 +5,8 @@ import logging
 from aiogram.fsm.storage.memory import MemoryStorage
 
 from utils.set_bot_commands import set_default_commands
-from .dispatcher import get_dispatcher
-from .settings import settings, bot
+from dispatcher import get_dispatcher
+from settings import settings, bot
 
 
 async def start_bot():

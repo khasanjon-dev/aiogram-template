@@ -33,7 +33,7 @@ class BotConfig:
 
 
 @dataclass
-class Configuration:
+class Settings:
     """All in one configuration's class."""
 
     debug = bool(os.getenv('DEBUG'))
@@ -41,10 +41,6 @@ class Configuration:
 
     redis = RedisConfig()
     bot = BotConfig()
-
-
-class Settings(Configuration):
-    base_url: str = os.getenv('BASE_URL')
 
 
 settings = Settings()
